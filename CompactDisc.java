@@ -8,6 +8,6 @@ public class CompactDisc extends Recording {
   public double getPrice() {
     double price = this.price * (condition / 10);
     return price >= 10? price: 10;
-  }
+  } //hhhhhhhh
 }
 
