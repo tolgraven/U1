@@ -17,5 +17,5 @@ public class Book extends Item implements Vat6 {
     "price=" + getPrice() + ", " + "price+vat=" + getPrice() * getVAT();
   }
    
-  public double getVAT() { return 1.06; }
+  // public double getVAT() { return 1.06; }
 }

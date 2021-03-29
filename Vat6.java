@@ -1,4 +1,6 @@
 
 public interface Vat6 extends Vat {
-  public double getVAT();
+  default double getVAT() {
+    return 1.06;
+  }
 }

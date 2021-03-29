@@ -22,5 +22,5 @@ public abstract class Recording extends Item implements Vat25 {
              "price+vat=" + getPrice() * getVAT();
     }
 
-  public double getVAT() { return 1.25; }
+  // public double getVAT() { return 1.25; }
 }

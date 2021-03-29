@@ -31,7 +31,7 @@ public class Order extends Item {
   public String getReceipt() {
     String result = "Receipt for order #" + counter + "\n-----------\n";
     for(Item item: items) {
-      result += "* " + item.getClass.getSimpleName() + "{ " + item +" }\n";
+      result += "* " + item.getClass().getSimpleName() + "{ " + item +" }\n";
     }
     result += "Total excl. VAT: " + getTotalValue() + "\n" 
             + "Total incl. VAT: " + getTotalValuePlusVAT()

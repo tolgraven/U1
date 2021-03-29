@@ -13,6 +13,6 @@ public abstract class Item implements Vat {
     return getPrice() * getVAT();
   }
 
-  public abstract double getVAT(); // XXX this needed?
+  // public abstract double getVAT(); // XXX this needed?
 
 }
