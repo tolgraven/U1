@@ -24,7 +24,7 @@ public class Order extends Item {
     }
     return result;
   }
-  public String printReceipt() {
+  public String getReceipt() {
     String result = "Receipt for order #" + counter + "\n-----------\n";
     for(Item item: items) {
       result += "* " + item.getClass.getSimpleName() + "{ " + item +" }\n";
