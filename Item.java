@@ -15,4 +15,4 @@ public abstract class Item implements Vat {
 
   public abstract double getVAT(); // XXX this needed?
 
-
+}
