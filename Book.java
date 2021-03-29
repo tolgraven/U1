@@ -13,8 +13,8 @@ public class Book extends Item implements Vat6 {
 
   public double getPrice() { return this.price * (bound? 1.25: 1.0); }
   public String toString() {
-    return this.getClass().getSimpleName() + " { " + "name='" + name + "'," + "author='" author + "'," + "bound=" + (bound? "true": "false") + "," + 
-  "price=" + price + "," + "price+vat=" + price * getVat() + " } "; }
+   "name='" + name + "'," + "author='" author + "'," + "bound=" + (bound? "true": "false") + "," + 
+  "price=" + price + "," + "price+vat=" + price * getVat(); }
    
   public double getVAT() { return 1.06; }
 }
