@@ -1,12 +1,13 @@
 
 
 public class Order extends Item {
-  private static long counter;
+  private static long counter = 0;
   private final long orderNumber;
   private final List<Item> items;
 
-  public Order(Item...) {
-    // TODO copy items to this.items
+  public Order(Item... items) {
+    this.orderNumber = ++counter;
+    this.items = new ArrayList<Item>(items);
   }
 
   public double getTotalValue() {
