@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class Order extends Item {
   private static long counter = 0;
@@ -7,7 +8,10 @@ public class Order extends Item {
 
   public Order(Item... items) {
     this.orderNumber = ++counter;
-    this.items = new ArrayList<Item>(items);
+    this.items = new ArrayList<Item>();
+    for(Item item: items) {
+      this.items.add(item);
+    }
   }
 
   public double getTotalValue() {
