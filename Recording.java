@@ -16,7 +16,7 @@ public abstract class Recording extends Item implements Vat25 {
   }
     
     public String toString() {
-	    "name=" + name + "," + "artist=" + artist + "," + "year=" + year + "," +
+	  return "name=" + name + "," + "artist=" + artist + "," + "year=" + year + "," +
   "type=" + type + "," + + "condition=" + condition + "," + "original price=" + price + "," + "price=" + getPrice() + "," + "price+vat=" + price * getVat(); }
   
 
