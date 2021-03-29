@@ -14,6 +14,11 @@ public abstract class Recording extends Item implements Vat25 {
     this.price = price;
     this.type = type;
   }
+    
+    public String toString() {
+	    return this.getClass().getSimpleName() + " { " + "name=" + name + "," + "artist=" + artist + "," + "year=" + year + "," +
+  "type=" + type + "," + + "condition=" + condition + "," + "original price=" + getPrice() + "," + "price=" + price + "," + "price+vat=" + price * getVat() + " } "; }
+  
 
   public double getVAT() { return 1.25; }
 }
